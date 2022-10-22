@@ -39,7 +39,7 @@ namespace Aerolinea.Vuelos.Application.UseCases.Command.Vuelos {
 
                 await _unitOfWork.Commit();
 
-                return new ResulService { data = objVuelo.Id, messaje = "se creo correctamente el vuelo " + DateTime.Now.ToString() };
+                return new ResulService { data = objVuelo.Id, messaje = "se creo correctamente el vuelo::: " + DateTime.Now.ToString() };
             }
             catch (Exception ex) {
                 Console.WriteLine(ex.ToString());
