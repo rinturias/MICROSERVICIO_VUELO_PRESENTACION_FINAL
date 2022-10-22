@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Sharedkernel.Core {
 
-    [ExcludeFromCodeCoverage]
+
     public abstract class DomainEvent : INotification {
         public DateTime OccuredOn { get; }
         public Guid Id { get; }

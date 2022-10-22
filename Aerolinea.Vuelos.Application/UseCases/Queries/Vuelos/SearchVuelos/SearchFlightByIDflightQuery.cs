@@ -7,6 +7,7 @@ namespace Aerolinea.Vuelos.Application.UseCases.Queries.Vuelos.SearchVuelos {
 
         public SearchFlightByIDflightQuery(Guid id) {
             SearchFlightDTO _searchFlightDTO = new();
+
             _searchFlightDTO.IdVuelo = id;
             searchFlightDTO = _searchFlightDTO;
         }
