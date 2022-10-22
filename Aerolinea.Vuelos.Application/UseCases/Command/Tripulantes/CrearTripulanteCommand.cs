@@ -7,7 +7,8 @@ namespace Aerolinea.Vuelos.Application.UseCases.Command.Tripulantes {
         private CrearTripulanteCommand() { }
 
         public CrearTripulanteCommand(TripulacionVueloDto detalle) {
-            Detalle = detalle;
+            Detalle =
+                detalle;
         }
 
         public TripulacionVueloDto Detalle { get; set; }
