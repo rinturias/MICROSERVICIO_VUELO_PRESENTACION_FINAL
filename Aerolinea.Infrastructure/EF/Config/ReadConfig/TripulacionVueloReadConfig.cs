@@ -6,7 +6,7 @@ namespace Aerolinea.Vuelos.Infrastructure.EF.Config.ReadConfig {
     public class TripulacionVueloReadConfig : IEntityTypeConfiguration<TripulacionVueloReadModel> {
         public void Configure(EntityTypeBuilder<TripulacionVueloReadModel> builder) {
             builder.ToTable("TripulacionVuelo");
-            builder.HasKey(x => x.Id);
+            builder.HasKey(x => x.id);
 
             builder.Property(x => x.codTripulacion)
            .HasColumnName("codTripulacion");
@@ -29,6 +29,7 @@ namespace Aerolinea.Vuelos.Infrastructure.EF.Config.ReadConfig {
            .HasColumnName("codGrupo");
 
             builder.Ignore("_domainEvents");
+
         }
     }
 }

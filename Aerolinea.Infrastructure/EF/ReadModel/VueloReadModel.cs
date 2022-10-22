@@ -16,7 +16,7 @@ namespace Aerolinea.Vuelos.Infrastructure.EF.ReadModel {
         public string? codGrupoTripulacion { get; set; }
         public string? horaConcluido { get; private set; }
         public string? fechaConcluido { get; private set; }
-        public ICollection<TripulacionVueloReadModel>? DetalleTripulacion { get; set; }
+        //public ICollection<TripulacionVueloReadModel>? DetalleTripulacion { get; set; }
 
 
     }

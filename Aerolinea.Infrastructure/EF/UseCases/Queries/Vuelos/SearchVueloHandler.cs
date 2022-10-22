@@ -18,11 +18,12 @@ namespace Aerolinea.Vuelos.Infrastructure.EF.UseCases.Queries.Vuelos {
         IRequestHandler<SearchListVuelosQuery, ResulService>,
         IRequestHandler<SearchFlightByIDflightQuery, ResulService> {
         private readonly DbSet<VueloReadModel> _vuelos;
-
+        private readonly DbSet<TripulacionVueloReadModel> _Tripulacion;
 
 
         public SearchVueloHandler(ReadDbContext context) {
             _vuelos = context.Vuelo;
+            _Tripulacion = context.TripulacionVuelo;
         }
 
 
@@ -31,8 +32,7 @@ namespace Aerolinea.Vuelos.Infrastructure.EF.UseCases.Queries.Vuelos {
 
             var vueloList = await _vuelos
                       .AsNoTracking()
-                      .Include(x => x.DetalleTripulacion)
-                      //.ThenInclude(x => x.Id)
+                      //.Include(x => x.DetalleTripulacion)
                       .Where(x => x.fecha >= request.SearchVuelosDTO.FecInicial && x.fecha <= request.SearchVuelosDTO.FecFinal && x.activo == 0)
                       .ToListAsync();
 
@@ -49,16 +49,14 @@ namespace Aerolinea.Vuelos.Infrastructure.EF.UseCases.Queries.Vuelos {
                 objVuelo.precio = item.precio;
                 objVuelo.estado = item.estado;
 
-                foreach (var itemDetalle in item.DetalleTripulacion) {
-                    TripulacionDto list = new();
-                    list.codTripulacion = itemDetalle.codTripulacion;
-                    list.codEmpleado = itemDetalle.codEmpleado;
-                    list.estado = itemDetalle.estado;
-                    listNewTripulacion.Add(list);
+
+
+                var tripulantes = await _Tripulacion.AsNoTracking().Where(x => x.codGrupo == item.codGrupoTripulacion).ToListAsync();
+
+                if (tripulantes.Count > 0) {
+                    objVuelo.tripulaciones = tripulantes;
 
                 }
-                objVuelo.tripulaciones = listNewTripulacion;
-                listNew.Add(objVuelo);
 
             }
 
@@ -69,14 +67,13 @@ namespace Aerolinea.Vuelos.Infrastructure.EF.UseCases.Queries.Vuelos {
         public async Task<ResulService> Handle(SearchListVuelosQuery request, CancellationToken cancellationToken) {
             var vueloList = await _vuelos
                      .AsNoTracking()
-                     .Include(x => x.DetalleTripulacion)
+                     //.Include(x => x.DetalleTripulacion)
                      .Where(x => x.activo == 0)
                       .Take(100)
                      .ToListAsync();
 
 
             List<VuelosDto> listNew = new();
-            List<TripulacionDto> listNewTripulacion = new();
 
             foreach (var item in vueloList) {
                 VuelosDto objVuelo = new();
@@ -88,17 +85,12 @@ namespace Aerolinea.Vuelos.Infrastructure.EF.UseCases.Queries.Vuelos {
                 objVuelo.precio = item.precio;
                 objVuelo.estado = item.estado;
                 objVuelo.StockAsientos = item.stockAsientos;
+                var tripulantes = await _Tripulacion.AsNoTracking().Where(x => x.codGrupo == item.codGrupoTripulacion).ToListAsync();
 
-                foreach (var itemDetalle in item.DetalleTripulacion) {
-                    TripulacionDto list = new();
-                    list.codVuelo = item.Id;
-                    list.codTripulacion = itemDetalle.codTripulacion;
-                    list.codEmpleado = itemDetalle.codEmpleado;
-                    list.estado = itemDetalle.estado;
-                    listNewTripulacion.Add(list);
+                if (tripulantes.Count > 0) {
+                    objVuelo.tripulaciones = tripulantes;
 
                 }
-                objVuelo.tripulaciones = listNewTripulacion;
                 listNew.Add(objVuelo);
 
             }

@@ -2,7 +2,7 @@
 
 namespace Aerolinea.Vuelos.Infrastructure.EF.ReadModel {
     public class TripulacionVueloReadModel {
-        public Guid Id { get; set; }
+        public Guid id { get; set; }
 
         public Guid codTripulacion { get; set; }
         public Guid codEmpleado { get; set; }

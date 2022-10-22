@@ -17,7 +17,7 @@ namespace Aerolinea.Vuelos.Application.Dto {
         public Guid codAeronave { get; set; }
         public int activo { get; set; }
 
-        public List<TripulacionDto> tripulaciones { get; set; }
+        public dynamic tripulaciones { get; set; }
 
 
     }
