@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using Sharedkernel.Core;
 
 namespace Sharedkernel.IntegrationEvents {
+    [ExcludeFromCodeCoverage]
     public record VueloReprogramado : IntegrationEvent {
 
         public string fecha { get; set; }

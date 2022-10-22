@@ -29,16 +29,8 @@ namespace Aerolinea.Vuelos.Test.Application.UseCases.DomainEventHandler.Vuelo {
                _mediator.Object
             );
 
-            var tcs = new CancellationTokenSource(1000);
 
-
-
-
-
-
-
-
-         
+            Assert.NotNull(_mediator);
 
         }
     }

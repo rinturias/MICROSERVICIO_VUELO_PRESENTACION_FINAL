@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading;
 using System.Threading.Tasks;
 using AAerolinea.Vuelos.Domain.Interfaces;
@@ -8,6 +9,7 @@ using Aerolinea.Vuelos.Domain.Interfaces;
 using MediatR;
 
 namespace Aerolinea.Vuelos.Application.UseCases.Command.Vuelos {
+    [ExcludeFromCodeCoverage]
     internal class ReprogramarVueloHandler : IRequestHandler<ReprogramarVueloCommand, ResulService> {
 
 

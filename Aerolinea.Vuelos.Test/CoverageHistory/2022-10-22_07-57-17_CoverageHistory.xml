@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2022-10-22_07-57-17" tag="">
+  <assembly name="Aerolinea.Vuelos.Application">
+    <class name="Aerolinea.Vuelos.Application.Dto.PlanillaAsientosVueloDto" coveredlines="3" coverablelines="3" totallines="11" coveredbranches="0" totalbranches="0" coveredcodeelements="3" totalcodeelements="3" />
+    <class name="Aerolinea.Vuelos.Application.Dto.RequestConcludeFlightDTO" coveredlines="2" coverablelines="2" totallines="9" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.Dto.RequestVueloActivadoDTO" coveredlines="1" coverablelines="1" totallines="8" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="1" />
+    <class name="Aerolinea.Vuelos.Application.Dto.RequestVueloDto" coveredlines="8" coverablelines="8" totallines="17" coveredbranches="0" totalbranches="0" coveredcodeelements="8" totalcodeelements="8" />
+    <class name="Aerolinea.Vuelos.Application.Dto.RequestVueloReprogramadoDTO" coveredlines="5" coverablelines="5" totallines="11" coveredbranches="0" totalbranches="0" coveredcodeelements="5" totalcodeelements="5" />
+    <class name="Aerolinea.Vuelos.Application.Dto.ResulService" coveredlines="5" coverablelines="5" totallines="9" coveredbranches="0" totalbranches="0" coveredcodeelements="5" totalcodeelements="5" />
+    <class name="Aerolinea.Vuelos.Application.Dto.SearchFlightDTO" coveredlines="1" coverablelines="1" totallines="7" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="1" />
+    <class name="Aerolinea.Vuelos.Application.Dto.SearchVuelosDTO" coveredlines="3" coverablelines="3" totallines="14" coveredbranches="0" totalbranches="0" coveredcodeelements="3" totalcodeelements="3" />
+    <class name="Aerolinea.Vuelos.Application.Dto.Tripulantes.TripulacionDto" coveredlines="5" coverablelines="5" totallines="14" coveredbranches="0" totalbranches="0" coveredcodeelements="5" totalcodeelements="5" />
+    <class name="Aerolinea.Vuelos.Application.Dto.Tripulantes.TripulacionVueloDto" coveredlines="3" coverablelines="3" totallines="11" coveredbranches="0" totalbranches="0" coveredcodeelements="3" totalcodeelements="3" />
+    <class name="Aerolinea.Vuelos.Application.Dto.VueloDeleteDto" coveredlines="1" coverablelines="1" totallines="7" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="1" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Tripulantes.CrearTripulanteCommand" coveredlines="4" coverablelines="5" totallines="15" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="3" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Tripulantes.CrearTripulanteHandler" coveredlines="0" coverablelines="27" totallines="68" coveredbranches="0" totalbranches="4" coveredcodeelements="0" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Tripulantes.ModificarTripulanteCommand" coveredlines="4" coverablelines="5" totallines="15" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="3" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Tripulantes.ModificarTripulanteHandler" coveredlines="0" coverablelines="38" totallines="84" coveredbranches="0" totalbranches="8" coveredcodeelements="0" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Vuelos.ActivarVueloCommand" coveredlines="5" coverablelines="5" totallines="17" coveredbranches="0" totalbranches="0" coveredcodeelements="3" totalcodeelements="3" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Vuelos.ActivarVueloHandler" coveredlines="0" coverablelines="21" totallines="51" coveredbranches="0" totalbranches="2" coveredcodeelements="0" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Vuelos.ConcluirVueloCommand" coveredlines="5" coverablelines="5" totallines="17" coveredbranches="0" totalbranches="0" coveredcodeelements="3" totalcodeelements="3" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Vuelos.ConcluirVueloHandler" coveredlines="0" coverablelines="20" totallines="52" coveredbranches="0" totalbranches="2" coveredcodeelements="0" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Vuelos.CrearVueloHandler" coveredlines="16" coverablelines="19" totallines="55" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Vuelos.CrearVuelosCommand" coveredlines="5" coverablelines="5" totallines="17" coveredbranches="0" totalbranches="0" coveredcodeelements="3" totalcodeelements="3" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Vuelos.EliminarVueloCommand" coveredlines="5" coverablelines="5" totallines="16" coveredbranches="0" totalbranches="0" coveredcodeelements="3" totalcodeelements="3" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Vuelos.EliminarVueloHandler" coveredlines="15" coverablelines="21" totallines="52" coveredbranches="1" totalbranches="2" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Vuelos.ReprogramarVueloCommand" coveredlines="5" coverablelines="5" totallines="16" coveredbranches="0" totalbranches="0" coveredcodeelements="3" totalcodeelements="3" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Command.Vuelos.ReprogramarVueloHandler" coveredlines="0" coverablelines="20" totallines="50" coveredbranches="0" totalbranches="2" coveredcodeelements="0" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Consumers.TripulanteVueloCreadoConsumer" coveredlines="24" coverablelines="24" totallines="49" coveredbranches="2" totalbranches="2" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Consumers.TripulanteVueloModificadoConsumer" coveredlines="23" coverablelines="23" totallines="48" coveredbranches="2" totalbranches="2" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.DomainEventHandler.Vuelo.PublishIntegrationEventWhenVueloActivadoHandler" coveredlines="0" coverablelines="10" totallines="27" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.DomainEventHandler.Vuelo.PublishIntegrationEventWhenVueloConcluidoHandler" coveredlines="3" coverablelines="15" totallines="32" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.DomainEventHandler.Vuelo.PublishIntegrationEventWhenVueloCreadoHandler" coveredlines="3" coverablelines="17" totallines="34" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.DomainEventHandler.Vuelo.PublishIntegrationEventWhenVueloEliminadoHandler" coveredlines="3" coverablelines="10" totallines="27" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.DomainEventHandler.Vuelo.PublishIntegrationEventWhenVueloReprogramadoHandler" coveredlines="3" coverablelines="13" totallines="29" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Queries.Vuelos.SearchVuelos.SearchFlightByIDflightQuery" coveredlines="0" coverablelines="6" totallines="15" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Queries.Vuelos.SearchVuelos.SearchListVuelosQuery" coveredlines="1" coverablelines="1" totallines="10" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="1" />
+    <class name="Aerolinea.Vuelos.Application.UseCases.Queries.Vuelos.SearchVuelos.SearchVuelosQuery" coveredlines="2" coverablelines="2" totallines="10" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="2" />
+  </assembly>
+  <assembly name="Aerolinea.Vuelos.Domain">
+    <class name="Aerolinea.Vuelos.Domain.Entities.TripulacionVuelo" coveredlines="19" coverablelines="79" totallines="115" coveredbranches="0" totalbranches="2" coveredcodeelements="7" totalcodeelements="16" />
+    <class name="Aerolinea.Vuelos.Domain.Entities.Vuelo" coveredlines="30" coverablelines="61" totallines="88" coveredbranches="0" totalbranches="0" coveredcodeelements="12" totalcodeelements="20" />
+    <class name="Aerolinea.Vuelos.Domain.Event.TripulanteAsignado" coveredlines="8" coverablelines="8" totallines="25" coveredbranches="0" totalbranches="0" coveredcodeelements="4" totalcodeelements="4" />
+    <class name="Aerolinea.Vuelos.Domain.Event.TripulantesModificado" coveredlines="4" coverablelines="4" totallines="17" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Domain.Event.VueloActivado" coveredlines="4" coverablelines="4" totallines="14" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Domain.Event.VueloConcluido" coveredlines="4" coverablelines="4" totallines="17" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Domain.Event.VueloEliminado" coveredlines="4" coverablelines="4" totallines="18" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Domain.Event.VueloHabilitado" coveredlines="4" coverablelines="4" totallines="18" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Domain.Event.VueloReprogramado" coveredlines="4" coverablelines="4" totallines="16" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Domain.Event.VueloTripulantesAsignados" coveredlines="4" coverablelines="4" totallines="16" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Domain.Factories.TripulantesVueloFactory" coveredlines="3" coverablelines="3" totallines="10" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="1" />
+    <class name="Aerolinea.Vuelos.Domain.Factories.VuelosFactory" coveredlines="5" coverablelines="5" totallines="17" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Aerolinea.Vuelos.Domain.ValueObjects.CantidadValue" coveredlines="11" coverablelines="12" totallines="22" coveredbranches="1" totalbranches="2" coveredcodeelements="4" totalcodeelements="4" />
+    <class name="Aerolinea.Vuelos.Domain.ValueObjects.PrecioValue" coveredlines="11" coverablelines="12" totallines="26" coveredbranches="1" totalbranches="2" coveredcodeelements="4" totalcodeelements="4" />
+  </assembly>
+  <assembly name="Sharedkernel">
+    <class name="Sharedkernel.Core.BussinessRuleValidationException" coveredlines="0" coverablelines="15" totallines="33" coveredbranches="0" totalbranches="2" coveredcodeelements="0" totalcodeelements="6" />
+    <class name="Sharedkernel.Core.ConfirmedDomainEvent`1" coveredlines="0" coverablelines="4" totallines="10" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="2" />
+    <class name="Sharedkernel.Core.DomainEvent" coveredlines="4" coverablelines="6" totallines="14" coveredbranches="0" totalbranches="0" coveredcodeelements="1" totalcodeelements="3" />
+    <class name="Sharedkernel.Core.Entity`1" coveredlines="7" coverablelines="17" totallines="33" coveredbranches="0" totalbranches="4" coveredcodeelements="3" totalcodeelements="6" />
+    <class name="Sharedkernel.Core.IntegrationEvent" coveredlines="5" coverablelines="6" totallines="12" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="3" />
+    <class name="Sharedkernel.Core.ValueObject" coveredlines="0" coverablelines="6" totallines="15" coveredbranches="0" totalbranches="4" coveredcodeelements="0" totalcodeelements="1" />
+    <class name="Sharedkernel.Entidades.Tripulacion" coveredlines="5" coverablelines="5" totallines="13" coveredbranches="0" totalbranches="0" coveredcodeelements="5" totalcodeelements="5" />
+    <class name="Sharedkernel.IntegrationEvents.TripulacionCreado" coveredlines="5" coverablelines="5" totallines="17" coveredbranches="0" totalbranches="0" coveredcodeelements="4" totalcodeelements="4" />
+    <class name="Sharedkernel.IntegrationEvents.TripulacionModificado" coveredlines="5" coverablelines="5" totallines="16" coveredbranches="0" totalbranches="0" coveredcodeelements="4" totalcodeelements="4" />
+    <class name="Sharedkernel.IntegrationEvents.VueloActivado" coveredlines="2" coverablelines="2" totallines="8" coveredbranches="0" totalbranches="0" coveredcodeelements="2" totalcodeelements="2" />
+    <class name="Sharedkernel.IntegrationEvents.VueloConcluido" coveredlines="7" coverablelines="7" totallines="16" coveredbranches="0" totalbranches="0" coveredcodeelements="7" totalcodeelements="7" />
+    <class name="Sharedkernel.IntegrationEvents.VueloEliminado" coveredlines="0" coverablelines="2" totallines="8" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="2" />
+    <class name="Sharedkernel.IntegrationEvents.VueloHabilitado" coveredlines="0" coverablelines="10" totallines="17" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="10" />
+    <class name="Sharedkernel.IntegrationEvents.VueloReprogramado" coveredlines="5" coverablelines="5" totallines="15" coveredbranches="0" totalbranches="0" coveredcodeelements="5" totalcodeelements="5" />
+    <class name="Sharedkernel.Rules.StringNotNullOrEmptyRule" coveredlines="0" coverablelines="7" totallines="17" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="3" />
+  </assembly>
+</coverage>

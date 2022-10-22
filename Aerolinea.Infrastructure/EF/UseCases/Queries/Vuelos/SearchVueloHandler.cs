@@ -48,7 +48,7 @@ namespace Aerolinea.Vuelos.Infrastructure.EF.UseCases.Queries.Vuelos {
                 objVuelo.fecha = item.fecha;
                 objVuelo.precio = item.precio;
                 objVuelo.estado = item.estado;
-
+                objVuelo.codAeronave = item.codAeronave;
 
 
                 var tripulantes = await _Tripulacion.AsNoTracking().Where(x => x.codGrupo == item.codGrupoTripulacion).ToListAsync();
@@ -85,6 +85,7 @@ namespace Aerolinea.Vuelos.Infrastructure.EF.UseCases.Queries.Vuelos {
                 objVuelo.precio = item.precio;
                 objVuelo.estado = item.estado;
                 objVuelo.StockAsientos = item.stockAsientos;
+                objVuelo.codAeronave = item.codAeronave;
                 var tripulantes = await _Tripulacion.AsNoTracking().Where(x => x.codGrupo == item.codGrupoTripulacion).ToListAsync();
 
                 if (tripulantes.Count > 0) {

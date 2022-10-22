@@ -1,6 +1,9 @@
-﻿using Sharedkernel.Core;
+﻿using System.Diagnostics.CodeAnalysis;
+using Sharedkernel.Core;
 
 namespace Sharedkernel.Rules {
+
+    [ExcludeFromCodeCoverage]
     public class StringNotNullOrEmptyRule : IBussinessRule {
         private readonly string _value;
 

@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Sharedkernel.Core {
+
+    [ExcludeFromCodeCoverage]
     public abstract record ValueObject {
         protected void CheckRule(IBussinessRule rule) {
             if (rule is null) {

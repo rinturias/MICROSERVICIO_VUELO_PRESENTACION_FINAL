@@ -50,7 +50,7 @@ namespace Aerolinea.Vuelos.Test.Application.UseCases.Handler.Vuelos {
         public async void CrearVueloHandler_HandleSuccess() {
 
 
-            //  _vuelosFactory.Setup(_vuelosFactory => _vuelosFactory.Create(horaSalida, horaLLegada, estado, precio, fecha, codDestino, codOrigen, codAeronave, activo, StockAsientos)).Returns(_vueloTest);
+            _vuelosFactory.Setup(_vuelosFactory => _vuelosFactory.Create(horaSalida, horaLLegada, estado, precio, fecha, codRuta, codAeronave, activo, StockAsientos)).Returns(_vueloTest);
 
             var objHandler = new CrearVueloHandler(
                _vueloServices.Object,

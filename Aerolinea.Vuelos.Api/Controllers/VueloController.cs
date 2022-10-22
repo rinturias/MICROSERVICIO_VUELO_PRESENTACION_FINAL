@@ -59,7 +59,7 @@ namespace Aerolinea.Vuelos.Api.Controllers {
         [HttpPut("ModifyVuelos")]
         public async Task<IActionResult> ModifyVuelos([FromBody] CrearVuelosCommand command) {
             try {
-                return Ok();
+                return Ok(await _mediator.Send(command));
             }
             catch (Exception ex) {
 
