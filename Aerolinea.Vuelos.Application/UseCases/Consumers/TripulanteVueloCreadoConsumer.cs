@@ -34,6 +34,7 @@ namespace Aerolinea.Vuelos.Application.UseCases.Consumers {
 
             TripulacionVueloDto tripulacionDto = new() {
                 vueloId = @event.vueloId,
+
                 IdGrupo = @event.IdGrupo,
                 tripulacionVuelos = tripulacionVuelos
 
