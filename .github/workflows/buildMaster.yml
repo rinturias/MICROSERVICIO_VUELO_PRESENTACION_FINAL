@@ -1,4 +1,8 @@
 name: .NET Core
+env:
+  AZURE_WEBAPP_NAME: microserviciovuelo   # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
+  DOTNET_VERSION: '5'  
 on:
   push:
     branches: [ "master" ]
@@ -52,14 +56,14 @@ jobs:
                username: ${{ secrets.REGISTRY_USERNAME }}
                password: ${{ secrets.REGISTRY_PASSWORD }}
             - run: docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/sampleapp:latest
-            - name: 'Deploy to Azure Container Instances'
-              uses: 'azure/aci-deploy@v1'
-              with:
-                resource-group: ${{ secrets.RESOURCE_GROUP }}
-                dns-name-label: ${{ secrets.RESOURCE_GROUP }}${{ github.run_number }}
-                image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/sampleapp:latest
-                registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
-                registry-username: ${{ secrets.REGISTRY_USERNAME }}
-                registry-password: ${{ secrets.REGISTRY_PASSWORD }}
-                name: aci-microserviciovuelo-new
-                location: 'west us 3'
+#             - name: 'Deploy to Azure Container Instances'
+#               uses: 'azure/aci-deploy@v1'
+#               with:
+#                 resource-group: ${{ secrets.RESOURCE_GROUP }}
+#                 dns-name-label: ${{ secrets.RESOURCE_GROUP }}${{ github.run_number }}
+#                 image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/sampleapp:latest
+#                 registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
+#                 registry-username: ${{ secrets.REGISTRY_USERNAME }}
+#                 registry-password: ${{ secrets.REGISTRY_PASSWORD }}
+#                 name: aci-microserviciovuelo-new
+#                 location: 'west us 3'
